@@ -11,10 +11,7 @@ from data import VRVideo
 import torchvision.transforms as tf
 from torch.utils import data as tdata
 from torch.optim import SGD
-from torch.autograd import Variable
 import torch.backends.cudnn as cudnn
-from argparse import ArgumentParser
-#from fire import Fire
 from tqdm import trange, tqdm
 import visdom
 import time
@@ -24,7 +21,7 @@ from smse import SphereMSE
 
 
 def train(
-        data_dir='C:/Users/admin/Desktop/Chuong/Saliency-detection-in-360-video-master/DATASET/360_Saliency_dataset_2018ECCV',
+        data_dir='./360_Saliency_dataset_2018ECCV',
         bs=2, #28
         lr=1e-4,
         epochs=20,
