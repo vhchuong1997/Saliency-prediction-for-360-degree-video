@@ -2,7 +2,7 @@
 """
 Created on Sun Feb  9 14:46:43 2020
 
-@author: admin
+@author: vhchuong
 """
 from torch import nn
 import numpy as np
