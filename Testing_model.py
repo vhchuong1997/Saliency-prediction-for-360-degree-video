@@ -2,7 +2,7 @@
 """
 Created on Fri Feb 14 16:22:05 2020
 
-@author: admin
+@author: vhchuong
 """
 import torch as th
 import os
