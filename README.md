@@ -24,7 +24,7 @@ After changing each the patch in the image, we can put them together to create a
 The model utilized for saliency map inference in this work is Spherical U-net model.
 | ![U-net](img/Unet%20-%20new.png) |
 |:---:|
-| *The process of replacing the surrounding pixels in the 3x3 patch* |
+| *Spherical U-net model* |
 
 ### Configuration
   - Python 3.6 is required.
