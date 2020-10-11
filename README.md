@@ -38,7 +38,9 @@ The model utilized for saliency map inference in this work is Spherical U-net mo
     + visdom: 0.1.8.9
     
 ### How to use
-Pending...
+**Testing:** In order to reproduce the results of the project, you just need to simply run 'Testing_model.py'. The Groundtruths, frames, saliency maps will be saved respectively in an auto-generated result folder. We used the visdom lib to visualize the output of the model. Before running the code, please initiate visdom by typing 'visdom' in 'cmd'(Windows) or 'Terminal prompt'(Ubuntu). Then, go to 'http://localhost:8097/', choose env 'test1' to watch the visualization. For in depth usage, please refer to the official git of [visdom](https://github.com/facebookresearch/visdom) to know how to use it. (The code will still run normally if you disable visdom related lines).
+
+**Training:** In order to retrain the model from scratch, you just need to simply run 'train.py'. Feel free to change the training parameters if you would like to improve the results. We also use visdom to visualize the process of training. Please follow te steps as mentioned above and choose env 'final' to watch the visualization.
 
 ### Dataset
 The Dataset we used is taken from paper *Saliency Detection in 360° Videos* by **Ziheng Zhang, Yanyu Xu**, Jingyi Yu and Shenghua Gao.
@@ -62,7 +64,7 @@ I would like to express my gratitude towards **[Assoc. Prof. Jui-Chiu Chiang](ht
   - [x] Reupload the Dataset to a more accessible platform
   - [x] Release supporting files and functions
   - [x] Release training code
-  - [ ] Release weight file and testing code
+  - [x] Release weight file and testing code
   
 ### License
 This project is released under the MIT License.
