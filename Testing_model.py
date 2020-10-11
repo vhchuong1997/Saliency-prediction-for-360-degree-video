@@ -66,8 +66,6 @@ def test(
                 save_image(img.cpu(), outputdir + '/img_'+ str(i) +'.png')
                 save_image((img1*30).cpu(), outputdir + '/SalMap_'+ str(i) +'.png')
                 save_image((img2*300).cpu(), outputdir + '/gt_'+ str(i) +'.png')
-                #th.save(img1.data, 'C:/Users/admin/Desktop/Chuong/Saliency-detection-in-360-video-master/output1_1/SalMap_'+ str(i) +'.bin')
-                #th.save(img2*10, 'C:/Users/admin/Desktop/Chuong/Saliency-detection-in-360-video-master/output1_1/gt_'+str(i)+'.bin')
                 
                 gt = cv2.imread(outputdir + '/gt_'+ str(i) +'.png',0)
                 gt = th.tensor(gt)
