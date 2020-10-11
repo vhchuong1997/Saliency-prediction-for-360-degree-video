@@ -19,7 +19,7 @@ The patch’s surrounding pixels will be replaced by the pixels with the other p
 | ![Replacing](img/process%203x3%20patch.png) |
 |:---:|
 | *The process of replacing the surrounding pixels in the 3x3 patch* |
-After changing each the patch in the image, we can put them together to create a new image with each size is 3 times larger than the original one. The new image will become the input of the next convolutional layer.
+After changing each of the patches in the image, we can put them together to create a new image with each size is 3 times larger than the original one. The new image will become the input of the next convolutional layer.
 
 The model utilized for saliency map inference in this work is Spherical U-net model.
 | ![U-net](img/Unet%20-%20new.png) |
