@@ -2,6 +2,7 @@
 ### Introduction
 This repo contains the codes that are used in the Capstone project of student: **Vo Hoang Chuong** from **the University of Science and Technology - The University of Danang**.
 
+### Saliency prediction for 360-degree video
 In this work, we proposed a novel spherical convolutional network concentrating on 360° video saliency prediction in which the kernel is defined as a spherical cap. In the process of convolution, instead of using neighboring pixels with regular relationship in the equirectangular projection coordinate, the convolutional patches will be changed to preserve the spherical perspective of the spherical signal. The proposed spherical convolutional network is evaluated by Pearson correlation coefficient (CC) and Kullback–Leibler divergence (KLD). Our experiments show the efficiency of our pro-posed spherical convolution method’s application in 360° video saliency detection utilizing spherical U-net model.
 
 In this case, we choose the kernel used in convolutional layer is 3x3 kernel. In the convolution process, the kernel will be elementwised multiplied with each 3x3 patch of the image. Our intention is to change the values in each 3x3 patch so that the perspective of the spherical image can be preserved during the convolution.
