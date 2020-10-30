@@ -67,6 +67,7 @@ I would like to express my gratitude towards **[Assoc. Prof. Jui-Chiu Chiang](ht
   - [x] Release training code
   - [x] Release weight file and testing code
   - [ ] Release the code for generating the coordinates of the surrounding pixels corresponding to each center pixel in panorama format
+  - [ ] Implement generic custom spherical convolution for any input size 
   
 ### License
 This project is released under the MIT License.
