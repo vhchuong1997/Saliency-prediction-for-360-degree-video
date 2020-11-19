@@ -47,7 +47,7 @@ def train(
     loader = tdata.DataLoader(dataset, batch_size=bs, shuffle=True, num_workers=0, pin_memory=True)
     model = Final1().cuda()
     optimizer = SGD(model.parameters(), lr, momentum=0.9, weight_decay=1e-5)
-    #pmodel = nn.DataParallel(model).cuda()
+    #model = nn.DataParallel(model).cuda() #this is when you have multiple GPUs
     criterion = SphereMSE(240, 480).float().cuda()# nn.BCELoss()
     if resume:
         ckpt = th.load('ckpt-' + exp_name + '-latest.pth.tar')
