@@ -85,7 +85,7 @@ class Final1(nn.Module):
 class Final3(nn.Module):
     def __init__(self):
         super(Final3, self).__init__()
-        #self.conv1 = SphericalConv(3, 64, np.pi/32, kernel_size=(8, 16), kernel_sr=None)
+        
         self.conv1 = nn.Conv2d(4, 64, 3, stride=1, padding=1)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu1 = nn.ReLU(inplace=True)
@@ -163,7 +163,7 @@ class Final3(nn.Module):
 class Finaltest(nn.Module):
     def __init__(self):
         super(Finaltest, self).__init__()
-        #self.conv1 = SphericalConv(3, 64, np.pi/32, kernel_size=(8, 16), kernel_sr=None)
+        
         self.conv1 = nn.Conv2d(4, 64, 3, stride=3, padding=0)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu1 = nn.ReLU(inplace=True)
