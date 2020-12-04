@@ -29,7 +29,7 @@ def test(
     viz = visdom.Visdom(server=plot_server, port=plot_port, env=exp_name)
     #textwindow = viz.text("Hello Pytorch3")
     transform = tf.Compose([
-        tf.Resize((240, 480)),#128, 256
+        tf.Resize((240, 480)),
         tf.ToTensor()
     ])
     coor1 = th.load('./support/240x480.pt')#.cuda()

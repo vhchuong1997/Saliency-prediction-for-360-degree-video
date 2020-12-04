@@ -52,23 +52,3 @@ def preprocess(image,coor):
     image = image.view(image.shape[0], output_c, output_h, output_w)
     
     return image.cuda()
-#coor = torch.cuda.LongTensor(30, 30, 2, 8)
-"""
-if __name__ == '__main__':
-    import time
-    
-    start = time.time()
-    coor = torch.cuda.LongTensor(240, 480, 2, 8)#load('60x60.pt')
-    img = Variable(torch.randn(32,21,240,480), requires_grad=True).cuda()#, requires_grad=True)
-    img = preprocess60x60(img, coor)
-    end = time.time()
-    print('Elapsed time (process patches): {} s'.format(end - start))
-    print(img.size())
-    
-    coor = torch.cuda.LongTensor(30, 30, 2, 8)#load('60x60.pt')
-    img = torch.randn(1,3,30,30).cuda()#, requires_grad=True)
-    from torch.autograd import gradcheck
-    print(gradcheck(lambda x: preprocess(x).sum(), img.clone().detach().double().requires_grad_()))
-    #img.backward()
-    #print(img.grad)
-"""
