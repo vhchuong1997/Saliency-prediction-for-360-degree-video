@@ -11,8 +11,9 @@ except AttributeError:
         tensor._backward_hooks = backward_hooks
         return tensor
     th._utils._rebuild_tensor_v2 = _rebuild_tensor_v2
-    
+
 class Final1(nn.Module):
+    '''This  is the definition for the spherical U-net model'''
     def __init__(self):
         super(Final1, self).__init__()
         self.conv1 = nn.Conv2d(4, 64, 3, stride=3, padding=0)
@@ -47,7 +48,7 @@ class Final1(nn.Module):
 
     def forward(self, image, last, coor1, coor2, coor3, coor4):
         x = th.cat([image, last], dim=1)
-        x = preprocess(x , coor1)
+        x = preprocess(x, coor1)
         c1 = self.conv1(x)
         c1 = self.bn1(c1)
         r1 = self.relu1(c1)

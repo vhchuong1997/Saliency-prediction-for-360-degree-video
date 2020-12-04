@@ -1,30 +1,23 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Feb  9 21:45:01 2020
-
-@author: admin
-"""
-
-
+import os
+import pickle
+import numbers
+from random import Random
 import numpy as np
 import torch as th
 from torch import nn
 import torch.utils.data as data
 from PIL import Image
-from torchvision import transforms
-import os
-import pickle
 from scipy import signal
-#from sconv.functional.sconv import spherical_conv
 from tqdm import tqdm
-import numbers
 #import cv2
 #from functools import lru_cache
-from random import Random
+
 
 class VRVideo(data.Dataset):
-    def __init__(self, root, frame_h, frame_w, video_train, frame_interval=1, transform=None, train=True,
-                 gaussian_sigma=np.pi / 20, kernel_rad=np.pi/7, kernel_size=(30, 60), cache_gt=True, rnd_seed=367643):
+    def __init__(self, root, frame_h, frame_w, video_train, 
+                frame_interval=1, transform=None, train=True,
+                gaussian_sigma=np.pi / 20, kernel_rad=np.pi/7, 
+                kernel_size=(30, 60), cache_gt=True, rnd_seed=367643):
         self.frame_interval = frame_interval
         self.transform = transform
         self.frame_h = frame_h
@@ -108,10 +101,10 @@ class VRVideo(data.Dataset):
         if item >= 0:
             if self.cache_gt and os.path.isfile(cfile):
                 target_map = th.from_numpy(np.load(cfile)).float()
-                #target_map = transforms.ToPILImage(mode=None)(target_map)
+                
                 #upplayer = Interpolate(size=(), mode='bilinear')
-                target_map = nn.functional.interpolate(target_map.unsqueeze(0), size = (self.frame_h, self.frame_w ),  mode='bilinear') #.resize((self.frame_w, self.frame_h))
-                #target_map = transforms.ToTensor()(target_map)
+                target_map = nn.functional.interpolate(target_map.unsqueeze(0), size = (self.frame_h, self.frame_w ),  mode='bilinear') 
+                
                 target_map = target_map.squeeze(0)
                 assert target_map.size() == (1, self.frame_h, self.frame_w)
                 return target_map #th.from_numpy(np.load(cfile)).float()
