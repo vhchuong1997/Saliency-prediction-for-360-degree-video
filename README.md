@@ -1,6 +1,9 @@
 # Saliency prediction for 360-degree video
+![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)
 ![code_score](https://www.code-inspector.com/project/16760/score/svg)
 ![code_status](https://www.code-inspector.com/project/16760/status/svg)
+![Read the Docs](https://readthedocs.org/projects/yt2mp3/badge/?version=latest)
+[![dependencies Status](https://david-dm.org/request/request/status.svg)](https://david-dm.org/request/request)
 ## Introduction
 This repo contains the codes that are used in the paper **"Saliency prediction for 360-degree video"** published in [[GTSD2020]](http://gtsd2020.hcmute.edu.vn/)  conference. This work is also a part of the Capstone project of student: **Vo Hoang Chuong** from **the University of Science and Technology - The University of Danang**.
 
