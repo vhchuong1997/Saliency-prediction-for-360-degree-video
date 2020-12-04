@@ -1,6 +1,6 @@
 from torch import nn
 import torch as th
-from torch_support import preprocess60x60, preprocess
+from torch_support import preprocess
 
 try:
     th._utils._rebuild_tensor_v2
