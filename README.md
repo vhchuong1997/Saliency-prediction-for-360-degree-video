@@ -12,37 +12,38 @@ In this work, we proposed a novel spherical convolutional network concentrating 
 
 In this case, we choose the kernel used in convolutional layer is 3x3 kernel. In the convolution process, the kernel will be elementwised multiplied with each 3x3 patch of the image. Our intention is to change the values in each 3x3 patch so that the perspective of the spherical image can be preserved during the convolution.
 
-|  |
+![spherical\_conv](.gitbook/assets/workflow.png)
 | :---: |
 | _Spherical convolution framework_ |
 
-![spherical\_conv](.gitbook/assets/workflow.png)
+
 
 **Preprocessing function:** For a conventional picture with resolution \(240x480\), we firstly take out 240x480 = 1,152,000 pixels and put them as the center pixel of 1,152,000 \(3x3\) patches. After that, we replace all the surrounding pixels of these patches with the corresponding surrounding pixels according to their coordinate in spherical domain. Next, we put these patches together in order to form a new image with resolution: 720x1440.
 
-|  |
+
+![Preprocessing\_function](.gitbook/assets/Preprocessing%20function.png)
 | :---: |
 | _Framework of the preprocessing function_ |
 
-![Preprocessing\_function](.gitbook/assets/Preprocessing%20function.png)
+
 
 For an example 3x3 patch from the image The central coordinate is: \(0,0\). By searching the \(0,0\) coordinate in the dictionary file, we acknowledge that the corresponding surrounding coordinates are: ![coor](.gitbook/assets/coor.png) The patch’s surrounding pixels will be replaced by the pixels with the other pixels on the image having the surrounding coordinates in the matrix obtained above.
 
-|  |
+![Replacing](.gitbook/assets/process%203x3%20patch.png)
 | :---: |
 | _The process of replacing the surrounding pixels in the 3x3 patch_ |
 
-![Replacing](.gitbook/assets/process%203x3%20patch.png)
+
 
 After changing each of the patches in the image, we can put them together to create a new image with each size is 3 times larger than the original one. The new image will become the input of the next convolutional layer.
 
 The model utilized for saliency map inference in this work is Spherical U-net model.
 
-|  |
+![U-net](.gitbook/assets/Unet%20-%20new.png)
 | :---: |
 | _Spherical U-net model_ |
 
-![U-net](.gitbook/assets/Unet%20-%20new.png)
+
 
 ## Configuration
 
@@ -68,11 +69,11 @@ The Dataset we used is downloaded from paper _Saliency Detection in 360° Videos
 
 ## Result
 
-|  |
+![U-net](.gitbook/assets/Result.png)
 | :---: |
 | _Results_ |
 
-![U-net](.gitbook/assets/Result.png)
+
 
 ## Inspiration
 
