@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This repo contains the codes that are used in the paper **"Saliency prediction for 360-degree video"** published in [\[GTSD2020\]](http://gtsd2020.hcmute.edu.vn/) conference. This work is also a part of the Capstone project of student: **Vo Hoang Chuong** from **the University of Science and Technology - The University of Danang**.
+This repo contains the codes that are used in the paper **"Saliency prediction for 360-degree video"** published in [\[GTSD2020\]](https://ieeexplore.ieee.org/document/9303135) conference. This work is also a part of the Capstone project of student: **Vo Hoang Chuong** from **the University of Science and Technology - The University of Danang**.
 
 ## Saliency prediction for 360-degree video
 
@@ -97,3 +97,17 @@ I would like to express my gratitude towards [**Assoc. Prof. Jui-Chiu Chiang**](
 
 This work is released under the MIT License.
 
+## Citation
+
+If you find this work helpful for your research, please consider citing:
+```
+@INPROCEEDINGS{9303135,
+  author={C. H. {Vo} and J. -C. {Chiang} and D. H. {Le} and T. T. A. {Nguyen} and T. V. {Pham}},
+  booktitle={2020 5th International Conference on Green Technology and Sustainable Development (GTSD)}, 
+  title={Saliency Prediction for 360-degree Video}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={442-448},
+  doi={10.1109/GTSD50082.2020.9303135}}
+```
