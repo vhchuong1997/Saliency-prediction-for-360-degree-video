@@ -66,7 +66,7 @@ The model utilized for saliency map inference in this work is Spherical U-net mo
 
 ## Dataset
 
-The Dataset we used is downloaded from paper _Saliency Detection in 360° Videos_ by **Ziheng Zhang, Yanyu Xu**, Jingyi Yu and Shenghua Gao. The original download link is in [\[Baidu Pan\]](https://pan.baidu.com/share/init?surl=akj0-8obIwC9oykTYSUm9Q) the passcode is _ry6u_. However, since you need to install Baidu NetDisk to download the folder and Baidu requires premium account for full speed downloading, it takes a lot of time to download the Dataset. I have reuploaded it in [\[Onedrive\]](https://bit.ly/Sal_dataset_2018_ECCV), password: **Saliency2018** for more convenient access. There are 12 zip files, and train/test index. After downloading these zips, unzip them together. Then, put the unzipped folders and the file 'vinfo.pkl' into the same folder named '360\_Saliency\_dataset\_2018ECCV'
+The Dataset we used is downloaded from paper _Saliency Detection in 360° Videos_ by **Ziheng Zhang, Yanyu Xu**, Jingyi Yu and Shenghua Gao. The original download link is in [\[Baidu Pan\]](https://pan.baidu.com/share/init?surl=akj0-8obIwC9oykTYSUm9Q) the passcode is _ry6u_. However, since you need to install Baidu NetDisk to download the folder and Baidu requires premium account for full speed downloading, it takes a lot of time to download the Dataset. I have reuploaded it in [\[Onedrive\]](http://bit.ly/3c618Pf), password: **Saliency2018** for more convenient access. There are 12 zip files, and train/test index. After downloading these zips, unzip them together. Then, put the unzipped folders and the file 'vinfo.pkl' into the same folder named '360\_Saliency\_dataset\_2018ECCV'
 
 ## Result
 
