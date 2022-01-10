@@ -1,6 +1,6 @@
 # Saliency prediction for 360-degree video
 
-![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?) ![code\_score](https://www.code-inspector.com/project/16760/score/svg) ![code\_status](https://www.code-inspector.com/project/16760/status/svg) ![Read the Docs](https://readthedocs.org/projects/yt2mp3/badge/?version=latest) [![dependencies Status](https://david-dm.org/request/request/status.svg)](https://david-dm.org/request/request)
+![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?) ![code\_score](https://api.codiga.io/project/16760/score/svg) ![code\_status](https://api.codiga.io/project/16760/status/svg) ![Read the Docs](https://readthedocs.org/projects/yt2mp3/badge)
 
 ## Introduction
 
